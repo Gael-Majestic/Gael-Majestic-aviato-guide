@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Découvrez Aviato Pharma à travers cinq exemples fictifs, conçus pour être lus sur téléphone.">
+  <title>Découvrir Aviato Pharma</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: "Atkinson Hyperlegible", "Segoe UI", Arial, sans-serif;
+      color: #17241d;
+      background: #f0f3f1;
+      line-height: 1.55;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    a { color: #006a3d; }
+    a:focus-visible { outline: 3px solid #006a3d; outline-offset: 3px; }
+    .wrap { width: min(100% - 32px, 860px); margin: auto; }
+    .brand { background: #0a0f0c; color: #fff; padding: 18px 0; }
+    .brandline { display: flex; align-items: center; gap: 12px; }
+    .cross { color: #19d27a; font-size: 32px; line-height: 1; }
+    .brand strong { display: block; font-size: 1.15rem; letter-spacing: .04em; }
+    .brand small { color: #c0d0c7; }
+    .hero { background: #0a0f0c; color: #fff; padding: 24px 0 34px; }
+    .eyebrow { color: #8be2af; font-size: .82rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; }
+    h1 { font-size: clamp(2rem, 7vw, 3.7rem); line-height: 1.08; letter-spacing: -.03em; margin: 12px 0 16px; max-width: 650px; }
+    .hero p { color: #d3ded7; max-width: 600px; margin: 0 0 20px; font-size: 1.08rem; }
+    .action { display: inline-flex; min-height: 48px; align-items: center; justify-content: center; padding: 10px 20px; border-radius: 6px; background: #19d27a; color: #07160d; font-weight: 700; text-decoration: none; }
+    .notice { margin: 20px 0 0; padding: 16px; border-left: 4px solid #00804a; background: white; }
+    .notice p { margin: 6px 0 0; }
+    main { padding-bottom: 48px; }
+    h2 { font-size: clamp(1.6rem, 5vw, 2.2rem); line-height: 1.18; margin: 0 0 12px; }
+    h3 { font-size: 1.2rem; line-height: 1.25; margin: 0; }
+    p { margin: 10px 0; }
+    .intro { padding: 36px 0 16px; }
+    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 8px; padding: 0; list-style: none; }
+    .steps a { display: flex; align-items: center; gap: 12px; min-height: 50px; padding: 10px 14px; background: white; border: 1px solid #bdcbc1; border-radius: 6px; font-weight: 700; text-decoration: none; }
+    .steps a:hover { border-color: #00804a; background: #e7f6ec; }
+    .num { color: #006a3d; font-weight: 800; font-variant-numeric: tabular-nums; }
+    .workflow { margin-top: 20px; background: white; border: 1px solid #ccd8d0; border-radius: 10px; overflow: hidden; scroll-margin-top: 16px; }
+    .workflow-head { padding: 22px 20px 0; }
+    .step-label { color: #006a3d; font-weight: 800; font-size: .82rem; letter-spacing: .07em; text-transform: uppercase; }
+    .workflow h2 { margin: 4px 0 10px; }
+    .workflow-body { padding: 0 20px 22px; }
+    .sample { margin: 18px 0; border: 1px solid #aebfb4; border-radius: 6px; overflow: hidden; }
+    .sample-title { background: #eaf3ed; color: #203d2b; padding: 10px 12px; font-weight: 700; font-size: .88rem; }
+    .sample-row { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; padding: 10px 12px; border-top: 1px solid #e0e8e2; }
+    .sample-row span:last-child { text-align: right; font-weight: 700; font-variant-numeric: tabular-nums; }
+    .status { background: #f2f5f3; border-left: 4px solid #52695a; padding: 12px; font-size: .94rem; }
+    .status strong { display: block; }
+    .next { display: inline-flex; align-items: center; min-height: 48px; margin-top: 14px; font-weight: 700; }
+    .end { margin-top: 28px; padding: 24px 20px; background: #0a0f0c; color: #fff; border-radius: 10px; }
+    .end p { color: #d3ded7; }
+    .end a { color: #9af0b9; display: inline-flex; min-height: 48px; align-items: center; }
+    .hero a:focus-visible, .end a:focus-visible { outline-color: #9af0b9; }
+    footer { border-top: 1px solid #cad6ce; padding: 20px 0 32px; color: #43574a; font-size: .9rem; }
+    @media (max-width: 360px) {
+      .wrap { width: calc(100% - 24px); }
+      .workflow-head { padding-inline: 16px; }
+      .workflow-body { padding-inline: 16px; }
+    }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; } }
+  </style>
+</head>
+<body>
+  <header class="brand">
+    <div class="wrap brandline">
+      <span class="cross" aria-hidden="true">✚</span>
+      <div><strong>AVIATO PHARMA</strong><small>La pharmacie, plus sereine</small></div>
+    </div>
+  </header>
+  <div class="hero">
+    <div class="wrap">
+      <div class="eyebrow">Une visite en 5 étapes</div>
+      <h1>Moins de ruptures.<br>Plus de visibilité.</h1>
+      <p>Découvrez comment Aviato aide une pharmacie à suivre ses médicaments, ses ventes et ses approvisionnements.</p>
+      <a class="action" href="#parcours">Commencer la visite <span aria-hidden="true"> &nbsp;→</span></a>
+    </div>
+  </div>
+  <main class="wrap">
+    <aside class="notice" aria-label="À propos de cette visite">
+      <strong>Prototype de présentation · exemples fictifs</strong>
+      <p>Cette visite ne vend rien et ne modifie aucun stock. Ce n'est pas encore l'application Android : Aviato est en cours de construction et n'est pas prêt pour un pilote.</p>
+    </aside>
+    <section class="intro" id="parcours" aria-labelledby="parcours-titre">
+      <div class="eyebrow" style="color:#006a3d">La pharmacie au quotidien</div>
+      <h2 id="parcours-titre">Un parcours simple</h2>
+      <p>Choisissez une étape ou faites défiler la page. Les chiffres ci-dessous servent uniquement à illustrer les idées.</p>
+      <nav aria-label="Étapes de la visite">
+        <ol class="steps">
+          <li><a href="#stock"><span class="num">01</span> Voir le stock</a></li>
+          <li><a href="#reception"><span class="num">02</span> Recevoir une livraison</a></li>
+          <li><a href="#vente"><span class="num">03</span> Faire une vente</a></li>
+          <li><a href="#commande"><span class="num">04</span> Préparer une commande</a></li>
+          <li><a href="#proprietaire"><span class="num">05</span> Suivre la journée</a></li>
+        </ol>
+      </nav>
+    </section>
+
+    <section class="workflow" id="stock" aria-labelledby="stock-titre">
+      <div class="workflow-head">
+        <div class="step-label">01 · Stock</div>
+        <h2 id="stock-titre">Savoir ce qui reste</h2>
+        <p>La pharmacie retrouve un médicament, consulte ses quantités et repère les produits à surveiller.</p>
+      </div>
+      <div class="workflow-body">
+        <div class="sample" aria-label="Exemple fictif d'une fiche produit">
+          <div class="sample-title">Exemple fictif · fiche produit</div>
+          <div class="sample-row"><span>Produit</span><span>Paracétamol</span></div>
+          <div class="sample-row"><span>Disponible</span><span>12 boîtes</span></div>
+          <div class="sample-row"><span>Seuil minimum</span><span>10 boîtes</span></div>
+          <div class="sample-row"><span>Emplacement</span><span>Rayon A</span></div>
+        </div>
+        <div class="status"><strong>Dans Windows, en cours de test</strong>Ajout d'un médicament depuis Stock et fiche produit avec prix, seuil et emplacement.</div>
+        <a class="next" href="#reception">Suite : recevoir une livraison →</a>
+      </div>
+    </section>
+
+    <section class="workflow" id="reception" aria-labelledby="reception-titre">
+      <div class="workflow-head">
+        <div class="step-label">02 · Réception</div>
+        <h2 id="reception-titre">Une livraison alimente le stock</h2>
+        <p>À l'arrivée, l'équipe saisit le fournisseur, le médicament, la quantité, le lot et la date de péremption. La réception validée ajoute les unités au stock.</p>
+      </div>
+      <div class="workflow-body">
+        <div class="sample" aria-label="Exemple fictif d'une livraison">
+          <div class="sample-title">Exemple fictif · livraison</div>
+          <div class="sample-row"><span>Avant réception</span><span>12 boîtes</span></div>
+          <div class="sample-row"><span>Livraison validée</span><span>+ 5 boîtes</span></div>
+          <div class="sample-row"><span>Après réception</span><span>17 boîtes</span></div>
+        </div>
+        <div class="status"><strong>Dans Windows, en cours de test</strong>La réception par lot existe. Le lien avec une commande n'est pas encore terminé.</div>
+        <a class="next" href="#vente">Suite : faire une vente →</a>
+      </div>
+    </section>
+
+    <section class="workflow" id="vente" aria-labelledby="vente-titre">
+      <div class="workflow-head">
+        <div class="step-label">03 · Vente</div>
+        <h2 id="vente-titre">Vendre au comptoir</h2>
+        <p>La caissière ajoute les produits, saisit le montant reçu puis valide ou annule la vente. Un ticket aide ensuite à retrouver les produits vendus.</p>
+      </div>
+      <div class="workflow-body">
+        <div class="sample" aria-label="Exemple fictif de ticket">
+          <div class="sample-title">Exemple fictif · ticket</div>
+          <div class="sample-row"><span>Paracétamol</span><span>1 boîte</span></div>
+          <div class="sample-row"><span>Total</span><span>5 000 FC</span></div>
+          <div class="sample-row"><span>Montant reçu</span><span>5 000 FC</span></div>
+        </div>
+        <div class="status"><strong>Dans Windows, en cours de test</strong>La vente et la recherche d'un ticket existent. Cet exemple ne crée aucune vente.</div>
+        <a class="next" href="#commande">Suite : préparer une commande →</a>
+      </div>
+    </section>
+
+    <section class="workflow" id="commande" aria-labelledby="commande-titre">
+      <div class="workflow-head">
+        <div class="step-label">04 · Commande</div>
+        <h2 id="commande-titre">Préparer le réapprovisionnement</h2>
+        <p>Aviato aide à repérer ce qu'il faut commander. À terme, l'équipe pourra suivre ce qui a été commandé et reçu.</p>
+      </div>
+      <div class="workflow-body">
+        <div class="sample" aria-label="Exemple fictif d'une livraison partielle">
+          <div class="sample-title">Exemple fictif · livraison partielle prévue</div>
+          <div class="sample-row"><span>Commande envoyée</span><span>5 boîtes</span></div>
+          <div class="sample-row"><span>Reçues</span><span>3 boîtes</span></div>
+          <div class="sample-row"><span>Reste à recevoir</span><span>2 boîtes</span></div>
+        </div>
+        <div class="status"><strong>Pas encore terminé</strong>Les suggestions existent dans Windows, mais le suivi des commandes envoyées et leur lien aux réceptions restent à construire. Un brouillon ne compte pas comme commande envoyée.</div>
+        <a class="next" href="#proprietaire">Suite : suivre la journée →</a>
+      </div>
+    </section>
+
+    <section class="workflow" id="proprietaire" aria-labelledby="proprietaire-titre">
+      <div class="workflow-head">
+        <div class="step-label">05 · Pilotage</div>
+        <h2 id="proprietaire-titre">Voir les ventes du jour</h2>
+        <p>Le propriétaire ou le pharmacien peut consulter les tickets du jour et les totaux afin de comprendre l'activité.</p>
+      </div>
+      <div class="workflow-body">
+        <div class="sample" aria-label="Exemple fictif de ventes du jour">
+          <div class="sample-title">Exemple fictif · aujourd'hui</div>
+          <div class="sample-row"><span>Ventes</span><span>50 000 FC</span></div>
+          <div class="sample-row"><span>Remboursements</span><span>− 5 000 FC</span></div>
+          <div class="sample-row"><span>Net</span><span>45 000 FC</span></div>
+        </div>
+        <div class="status"><strong>Dans Windows, en cours de test</strong>Le registre actuel concerne ce PC seulement. La vue de plusieurs comptoirs et l'accès à distance restent à construire.</div>
+        <a class="next" href="#parcours">Revoir les étapes ↑</a>
+      </div>
+    </section>
+    <section class="end" aria-labelledby="avis-titre">
+      <h2 id="avis-titre">Votre avis compte</h2>
+      <p>Qu'est-ce qui vous paraît utile ou difficile à comprendre ? Partagez votre avis avec la personne qui vous a envoyé cette visite.</p>
+      <p>Aucune information personnelle n'est demandée sur cette page.</p>
+      <a href="#parcours">Retour au début ↑</a>
+    </section>
+  </main>
+  <footer><div class="wrap">Aviato Pharma · Prototype explicatif · Données fictives</div></footer>
+</body>
+</html>
